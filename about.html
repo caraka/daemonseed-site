@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — daemonseed</title>
+<meta name="description" content="What daemonseed is, where it comes from, and how it is licensed.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <span class="brand">daemon<span class="seed">seed</span></span>
+    <nav class="top">
+      <a href="/">Home</a>
+      <a href="/download.html">Download</a>
+      <a href="/about.html" aria-current="page">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero sm">
+    <div class="wrap">
+      <h1>About daemonseed</h1>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap prose">
+      <h2>The idea</h2>
+      <p>daemonseed is a place to talk and share files privately, without trusting a server. It is a pure-Rust successor to Demonsaw — informed by its lineage, built clean, with none of its code.</p>
+      <p>Instead of a relay in the middle, daemonseed rides a peer-to-peer, onion-routed network. Messages and files are end-to-end-encrypted with post-quantum cryptography, and the routing is designed so no single node in the path learns both ends of a conversation or a transfer. There is nothing central to run, block, or compel.</p>
+
+      <h2>Where it stands</h2>
+      <p>This is early software — an alpha, for people who want to try the idea and can tolerate rough edges. It has not been independently audited. The design goal is to keep working under network conditions that break ordinary connections, and to stay private by construction rather than by policy.</p>
+
+      <h2>Open source</h2>
+      <ul>
+        <li>The application is licensed <strong>AGPL-3.0-or-later</strong>.</li>
+        <li>The wire-format schema is dual-licensed <strong>Apache-2.0 OR MIT</strong>, so other clients can be built freely.</li>
+        <li>The source opens publicly once its post-quantum crypto foundation is released.</li>
+      </ul>
+
+      <h2>Who</h2>
+      <p>Built by <span class="mono">caraka</span>. daemonseed is a personal, independent project.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>daemonseed — AGPL-3.0-or-later. Built by <span class="mono">caraka</span>.</span>
+    <span><a href="/">Home</a> · <a href="/download.html">Download</a></span>
+  </div>
+</footer>
+</body>
+</html>

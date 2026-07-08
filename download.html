@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download — daemonseed</title>
+<meta name="description" content="Download daemonseed alpha builds for Linux and Windows, with checksums and signatures to verify what you run.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <span class="brand">daemon<span class="seed">seed</span></span>
+    <nav class="top">
+      <a href="/">Home</a>
+      <a href="/download.html" aria-current="page">Download</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero sm">
+    <div class="wrap">
+      <h1>Download</h1>
+      <p class="sub">Alpha builds. Grab your platform, then verify it against the published checksum before you run it.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="dl">
+        <div class="card">
+          <span class="plat">Linux</span>
+          <span class="file">daemonseed-x86_64.AppImage</span>
+          <p class="muted">Portable AppImage. <code>chmod +x</code> and run.</p>
+          <a class="btn primary" href="https://github.com/caraka/daemonseed-releases/releases/latest">Get the latest</a>
+        </div>
+        <div class="card">
+          <span class="plat">Windows</span>
+          <span class="file">daemonseed.exe</span>
+          <p class="muted">Standalone executable. No installer.</p>
+          <a class="btn primary" href="https://github.com/caraka/daemonseed-releases/releases/latest">Get the latest</a>
+        </div>
+      </div>
+
+      <div class="banner">
+        <strong>First alpha builds land shortly.</strong> Downloads are served from the <a href="https://github.com/caraka/daemonseed-releases/releases">daemonseed-releases</a> page. The source code is not public yet — it opens once its post-quantum crypto foundation does.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap prose">
+      <h2>Verify what you run</h2>
+      <p>Every release ships a <code>SHA256SUMS</code> file listing the exact hash of each binary, plus a signature over that file made with the project's release key. Two checks, in order:</p>
+
+      <h3>1. Check the hash</h3>
+      <pre><code>sha256sum --check SHA256SUMS
+# daemonseed-x86_64.AppImage: OK</code></pre>
+      <p class="muted">If the line does not say <code>OK</code>, stop — the file is not what was published.</p>
+
+      <h3>2. Check the signature</h3>
+      <p class="muted">The signature over <code>SHA256SUMS</code> confirms it came from the project and not a middleman. The release public key and the exact verification command are published alongside the first signed release, on the <a href="https://github.com/caraka/daemonseed-releases">releases repository</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>daemonseed — AGPL-3.0-or-later. Built by <span class="mono">caraka</span>.</span>
+    <span><a href="/">Home</a> · <a href="/about.html">About</a></span>
+  </div>
+</footer>
+</body>
+</html>

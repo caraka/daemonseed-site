@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>daemonseed — serverless, post-quantum comms & file-sharing</title>
+<meta name="description" content="A pure-Rust successor to Demonsaw. Serverless, end-to-end-encrypted, post-quantum communication and file-sharing over a peer-to-peer network that hides both ends.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <span class="brand">daemon<span class="seed">seed</span></span>
+    <nav class="top">
+      <a href="/" aria-current="page">Home</a>
+      <a href="/download.html">Download</a>
+      <a href="/about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1>Talk and share files<br>without a server in the middle.</h1>
+      <p class="lede">Serverless, end-to-end-encrypted, post-quantum communication and file-sharing. A pure-Rust successor to Demonsaw.</p>
+      <p class="sub">There is no relay to run, seize, or subpoena. Every message and every download rides an onion-routed peer-to-peer network — designed so no single node ever learns both ends of a transfer.</p>
+      <div class="cta">
+        <a class="btn primary" href="/download.html">Download the alpha</a>
+        <a class="btn ghost" href="#how">How it works</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="how">
+    <div class="wrap">
+      <h2>What makes it different</h2>
+      <div class="grid">
+        <div class="card">
+          <p class="k">No servers</p>
+          <p>Peer-to-peer over the public Veilid network. Nothing central to operate, block, or compel.</p>
+        </div>
+        <div class="card">
+          <p class="k">Hides both ends</p>
+          <p>Two stacked onion routes — one for the sender, one for the receiver. No relay in the path knows who is talking to whom.</p>
+        </div>
+        <div class="card">
+          <p class="k">Post-quantum</p>
+          <p>CNSA 2.0 throughout — ML-KEM-1024 and ML-DSA-87. Content stays sealed against a future quantum adversary.</p>
+        </div>
+        <div class="card">
+          <p class="k">Censorship-survivable</p>
+          <p>Built to keep working where ordinary connections are blocked, not just where the network is friendly.</p>
+        </div>
+        <div class="card">
+          <p class="k">Pure Rust</p>
+          <p>No C dependencies, memory-safe from the ground up. The crypto is a dedicated post-quantum module.</p>
+        </div>
+        <div class="card">
+          <p class="k">Free & open</p>
+          <p>AGPL-3.0-or-later. Built clean — zero lines of Demonsaw code, informed only by its lineage.</p>
+        </div>
+      </div>
+
+      <div class="banner">
+        <strong>This is alpha software.</strong> It is early, it has rough edges, and it has not been through a security audit. It is for the curious and the technically brave — not yet for anyone whose safety depends on it. Verify every download (see the <a href="/download.html">download page</a>).
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>daemonseed — AGPL-3.0-or-later. Built by <span class="mono">caraka</span>.</span>
+    <span><a href="/download.html">Download</a> · <a href="/about.html">About</a></span>
+  </div>
+</footer>
+</body>
+</html>
