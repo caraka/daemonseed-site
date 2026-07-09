@@ -47,15 +47,15 @@
         </div>
         <div class="card">
           <p class="k">Post-quantum</p>
-          <p>CNSA 2.0 throughout — ML-KEM-1024 and ML-DSA-87. Content stays sealed against a future quantum adversary.</p>
+          <p>Everything daemonseed seals uses CNSA 2.0 — ML-KEM-1024, ML-DSA-87, AES-256. Content stays sealed against a future quantum adversary. The transport's own crypto is classical for now.</p>
         </div>
         <div class="card">
-          <p class="k">Censorship-survivable</p>
-          <p>Built to keep working where ordinary connections are blocked, not just where the network is friendly.</p>
+          <p class="k">Hard to block</p>
+          <p>There is no daemonseed server to blacklist — blocking it means blocking an entire public peer-to-peer network. We don't claim victory over determined national firewalls; we do remove every easy target.</p>
         </div>
         <div class="card">
           <p class="k">Pure Rust</p>
-          <p>No C dependencies, memory-safe from the ground up. The crypto is a dedicated post-quantum module.</p>
+          <p>All daemonseed code — including its dedicated post-quantum crypto module — is memory-safe Rust. Only platform plumbing (storage, fonts, windowing) links C libraries.</p>
         </div>
         <div class="card">
           <p class="k">Free & open</p>
