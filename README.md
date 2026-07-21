@@ -13,7 +13,7 @@ about.html       project, license, provenance
 404.html         not-found
 styles.css       the whole design system (dark-first, light fallback)
 favicon.svg      mark
-_headers         Cloudflare Pages security headers (strict CSP, HSTS, no-referrer)
+_headers         security headers (strict CSP, HSTS, no-referrer)
 ```
 
 ## Local preview
@@ -25,20 +25,11 @@ python3 -m http.server 8080
 # → http://localhost:8080
 ```
 
-## Deploy — Cloudflare Pages
-
-Pure static site, so there is **no build**:
-
-1. Cloudflare → Pages → connect this repo.
-2. Build command: **(none)**. Build output directory: **`/`** (repo root).
-3. Add the custom domain `daemonseed.org` once DNS is on Cloudflare.
-
-`_headers` is applied automatically by Pages.
-
 ## Status
 
-Staged, not live. Repo is **private** until launch. Go-live is a product decision — the
-downloadable client is the serverless Veilid build; the site launches when the first
-public alpha is ready for testers.
+Live at <https://daemonseed.org>. The downloadable client is the serverless Veilid
+build — first signed alpha binaries land shortly on the
+[daemonseed-releases](https://github.com/caraka/daemonseed-releases) page, at which
+point the Download buttons switch from "Builds coming soon" to the live release.
 
 Built by `caraka`. AGPL-3.0-or-later.
