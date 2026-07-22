@@ -35,6 +35,21 @@
   </div>
 
   <section id="how">
+    <div class="wrap prose">
+      <h2>How it works</h2>
+      <p>daemonseed never sends your messages straight to the other person. Each of you sits at the end of your own private, encrypted path through the network — imagine a line of strangers passing a sealed package hand to hand, where every one of them knows only the neighbour they pass it to, never the whole route and never who started it.</p>
+      <p>To reach someone, your path and theirs are joined end to end. That split is the whole trick:</p>
+      <ul>
+        <li>The nodes on <strong>your</strong> side can tell a message came from you — but never who receives it.</li>
+        <li>The nodes on the <strong>other</strong> side can tell who receives it — but never that it came from you.</li>
+        <li>No node is ever on both paths, so <strong>no one in the middle learns both ends</strong> of a conversation or a transfer.</li>
+      </ul>
+      <p>Every hop is wrapped in its own layer of encryption, like nested locked boxes — one per node. A node can open only its own layer, and all it finds inside is who to hand the package to next. It never sees what is within.</p>
+      <p>This is Veilid's private routing; daemonseed stacks two such routes — one for the sender, one for the receiver — so both ends stay hidden at once. No central server ever sits in between.</p>
+    </div>
+  </section>
+
+  <section id="different">
     <div class="wrap">
       <h2>What makes it different</h2>
       <div class="grid">
